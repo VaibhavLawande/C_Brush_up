@@ -1,0 +1,40 @@
+struct st
+{
+   int num;
+   char *p;
+   float marks;
+}
+main()
+{
+   struct st *ptr;
+  //struct st s1;
+  ptr=malloc(sizeof(struct st));
+  ptr->p=malloc(10);
+  printf("Enter the number\n");
+  scanf("%d")
+  ptr->num=20;
+
+free(p);
+free(ptr);
+  
+} 
+
+#define SWAP_NIBBLES(CH) CH=CH>>4|CH<<4
+
+int a = 10;
+int sum(int num1, int num2) {
+    static int a = 0;
+    printf("a %d\n",a);//a=0,a=8
+    return (a=num1+num2);
+}
+int main()
+{
+    printf("a %d\n",a);//a=10
+    int a = 20;
+    printf("a %d\n",a);//a=20
+    sum(5,3);
+    printf("a %d\n",a);//a=20
+    sum(6,9);
+    printf("a %d\n",a);//a=20
+    return 0;
+}
